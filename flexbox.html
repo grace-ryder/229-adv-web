@@ -5,14 +5,19 @@
   <meta charset="utf-8">
   <title>flexbox demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
 
 <style>
 
-section {background: darkgreen;
+body {
+  font-family: 'K2D', sans-serif;
+}
+
+section {background: #507624;
 display: flex;
 margin: 50px;}
 
-div {background:lightseagreen;
+div {background:#F1C40F;
 width: 100px;
 height: 100px;}
 
@@ -29,7 +34,7 @@ align-content:space-around;}
 .flex-container2 {
   display: flex;
 
-  height: 500px;
+  height: auto;
   align-items: center;
 }
 
@@ -48,9 +53,9 @@ align-content:space-around;}
   align-items: center;
   display: flex;
 width: 30%;
-height: 400px;
+height: auto;
 margin: 50px;
-background-color: blue;
+background-color: #201f42;
 }
 
 .second {
@@ -58,14 +63,14 @@ background-color: blue;
   flex: 50%;
   height: 50%;
   align-items: center;
-  background-color: blue;
+  background-color: #201f42;
   justify-content: center;
 }
 
 /* Section 3 */
 .flex-container3 {
   flex-flow: row wrap;
-  background-color: blue;
+
   align-items: flex-end;
 }
 
@@ -76,9 +81,11 @@ width:30px;}
 /* Section 4 */
 .flex-container4 {
   display: flex;
-  height: 200px;
+  height: auto;
   align-items: baseline;
-  background-color: lightgreen;
+  flex-wrap: wrap;
+  justify-content: center;
+
 
 }
 
@@ -89,7 +96,7 @@ width:30px;}
   text-align: center;
   margin: 20px;
   line-height: 75px;
-  background-color: yellow;
+
 
 }
 
@@ -97,8 +104,8 @@ width:30px;}
 
 .flex-container5 {
   width: 90vw;
-  height: 500px;
-  background-color: lightblue;
+  height: auto;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -111,7 +118,8 @@ width:30px;}
   width: 80vw;
   height: 80%;
   margin: 20px;
-  background-color: blue;
+  color: white;
+
 
 }
 
@@ -121,7 +129,7 @@ margin: 20px;
 
 .article {
 flex: 70%;
-background-color: red;
+background-color: #201f42;
 height: auto;
 padding: 10px;
 
@@ -131,7 +139,7 @@ padding: 10px;
 
 .sidebar {
   flex: 30%;
-  background-color: darkgrey;
+  background-color: #201f42;
   height: auto;
   padding: 10px;
 
@@ -141,6 +149,8 @@ padding: 10px;
 width: 100vw;
 padding: 10px;
 text-align: center;
+margin-bottom: 10px;
+
 
 }
 
@@ -190,7 +200,7 @@ text-align: center;
     <div>3</div>
     <div style="flex-grow: 10">4</div>
     <div style="flex-shrink:0">5</div>
-    <div style="align-self:center">6</div>\
+    <div style="align-self:center">6</div>
     <div>7</div>
     <div>8</div>
   </section>
@@ -212,13 +222,13 @@ text-align: center;
 
      <div class="article">
       <h2>title of main article</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>Maecenas maximus luctus dui et maximus. Duis lectus purus, condimentum at velit vulputate, fermentum molestie leo. Duis rutrum tristique tortor at accumsan. Phasellus a condimentum est. Donec justo ligula, ultricies ut arcu a, imperdiet condimentum sapien. Nam nec erat consequat, finibus purus ac, consectetur massa. Morbi tristique sem in sodales efficitur. Sed molestie malesuada convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Cras lacinia quis augue ac vehicula. Fusce in porttitor augue, vel sollicitudin lectus. Curabitur in orci lacinia lectus hendrerit mollis. Nullam odio felis, volutpat id felis in, consectetur varius sem. Quisque venenatis ut odio in fringilla. Phasellus malesuada placerat nisl nec dapibus. Quisque mollis imperdiet venenatis. In cursus tortor justo, in finibus enim interdum non.</p>
     </div>
 
     <div class= "sidebar">
       <h2>sidebar here</h2>
-      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>Phasellus varius, velit in eleifend consectetur, eros urna tempor mauris, ut condimentum orci leo ac est. Nunc ornare felis nulla, varius ultricies urna venenatis nec. Sed justo nulla, euismod ut semper vitae, dignissim accumsan neque. Vivamus sit amet dolor semper, sollicitudin nunc vitae, tristique eros. Donec ullamcorper ornare orci. Duis leo nisi, dictum ac lacus quis, interdum dignissim erat. Duis egestas cursus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et neque viverra, posuere magna et, bibendum ligula. Vestibulum tempus euismod facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
     </div>
 
   </div>
