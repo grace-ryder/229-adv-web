@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ :root {
+ --color: purple;
+ }
+
+ .sigh
+{height: 100px;
+width: 100px;
+background: green;
+transform:rotate(180deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sigh"> sigh </div>
+
+<ul>
+  <li> a </li>
+  <li> b </li>
+  <li> c </li>
+  </ul>
+
+</body>
+</html>

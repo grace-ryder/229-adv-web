@@ -1,0 +1,344 @@
+body {
+  background-color: #AE5A06;
+  font-family: 'Abel', sans-serif;
+}
+
+
+p, .four, .three, .five, .six, .seven, .eight {
+  font-size: 24px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+h2, h1 {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 2em;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 30% 5% 30%;
+  grid-template-rows: 5% 10% 5% auto auto auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+img {
+  width: 75%;
+  height: auto;
+}
+
+h1, h2, img, nav, .title, .one, .two, .three, .four, .five, .six, .seven, .eight, .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
+  justify-self: center;
+  align-self: center;
+}
+
+nav {
+  grid-column: 1/4;
+  grid-row:1;
+}
+
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+    color: white;
+  }
+
+
+
+.title {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
+.one {
+  grid-column: 1/4;
+  grid-row: 3;
+}
+
+.two {
+  grid-column: 1/4;
+  grid-row: 4;
+}
+
+.three {
+  grid-column: 1/2;
+  grid-row: 5;
+}
+
+.icon1 {
+  grid-column: 2/3;
+  grid-row: 5;
+}
+
+.pic1 {
+  grid-column: 3/4;
+  grid-row: 5;
+}
+
+.pic2 {
+  grid-column: 1/2;
+  grid-row: 6;
+}
+
+.icon2 {
+  grid-column: 2/3;
+  grid-row: 6;
+  transform: rotate(180deg);
+}
+
+.four {
+  grid-column: 3/4;
+  grid-row: 6;
+}
+
+.five {
+  grid-column: 1/2;
+  grid-row: 7;
+}
+
+.icon3 {
+  grid-column: 2/3;
+  grid-row: 7;
+}
+
+.pic3 {
+  grid-column: 3/4;
+  grid-row: 7;
+}
+
+.pic4 {
+  grid-column: 1/2;
+  grid-row: 8;
+}
+
+.icon4 {
+  grid-column: 2/3;
+  grid-row: 8;
+  transform: rotate(180deg);
+}
+
+.six {
+  grid-column: 3/4;
+  grid-row: 8;
+}
+
+.seven {
+  grid-column: 1/2;
+  grid-row: 9;
+}
+
+.icon5 {
+  grid-column: 2/3;
+  grid-row: 9;
+}
+
+.pic5 {
+  grid-column: 3/4;
+  grid-row: 9;
+}
+
+.schmoops {
+  grid-column: 1/2;
+  grid-row:10;
+}
+
+.schmoops-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+.daisy {
+  grid-column:2/3;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+}
+
+.lola{
+  grid-column: 1/2;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+}
+
+.icon6 {
+  grid-column: 2/3;
+  grid-row: 10;
+  transform: rotate(180deg);
+}
+
+.eight {
+  grid-column: 3/4;
+  grid-row: 10;
+}
+
+@media only screen and (max-width: 995px) {
+
+  p, .four, .three, .five, .six, .seven, .eight {
+    font-size: 20px;
+  }
+
+  .gridcontainer {
+    grid-template-columns: 80%;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    grid-template-areas:
+"nav"
+      "title"
+      "one"
+      "two"
+      "three"
+      "icon1"
+      "pic1"
+      "four"
+      "icon2"
+      "pic2"
+      "five"
+      "icon3"
+      "pic3"
+      "six"
+      "icon4"
+      "pic4"
+      "seven"
+      "icon5"
+      "pic5"
+      "eight"
+      "icon6"
+      "schmoops";
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+
+
+  .title {
+    grid-area: title;
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .icon1 {
+    grid-area: icon1;
+    font-size: 48px;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .pic1 {
+    grid-area: pic1;
+    max-width: 65%;
+    min-width: 30%;
+    height: auto;
+  }
+
+  .pic2 {
+    grid-area: pic2;
+    max-width: 60%;
+    height: auto;
+  }
+
+  .icon2 {
+    grid-area: icon2;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
+
+  .icon3 {
+    grid-area: icon3;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .pic3 {
+    grid-area: pic3;
+  }
+
+  .pic4 {
+    grid-area: pic4;
+    max-height: 80%;
+    width: auto;
+  }
+
+  .six {
+    grid-area: six;
+  }
+
+  .icon4 {
+    grid-area: icon4;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .seven {
+    grid-area: seven;
+  }
+
+  .icon5 {
+    grid-area: icon5;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .pic5 {
+    grid-area: pic5;
+  }
+
+  .schmoops {
+    grid-area: schmoops;
+  }
+
+  .icon6 {
+    grid-area: icon6;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .eight {
+    grid-area: eight;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  p, .four, .three, .five, .six, .seven, .eight {
+    font-size: 18px;
+  }
+
+
+  li {
+    display: block;
+  }
+
+}
